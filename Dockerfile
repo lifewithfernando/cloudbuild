@@ -9,7 +9,7 @@ RUN apt-get -y update && \
     apt-get install -y telnet && \
     apt-get install -y wget
 
-RUN python -m pip install --upgrade pip
+RUN python -m pip install --upgrade pip && pip install flask
 
 COPY . /app
 WORKDIR /app
